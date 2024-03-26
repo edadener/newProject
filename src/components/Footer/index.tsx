@@ -1,65 +1,43 @@
 import { FC } from "react";
-import { Grid, Typography } from "@mui/material";
+import { Grid, IconButton, Typography } from "@mui/material";
+import InstagramIcon from '@mui/icons-material/Instagram';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
 const Footer: FC = (): JSX.Element => {
     return (
-        <Grid item xs={12} pt={3} bgcolor="#f5f7f9">
+        <Grid item xs={12} p={5} bgcolor="#f5f7f9">
             <Grid container>
-                <Grid item xs={3}>
+                <Grid item xs={4}>
                     <Typography variant="h6">
-                        Lorem.
+                        Keşfet
                     </Typography>
                     <Typography color="gray">
-                        Lorem.
+                        Özel Dersler
                     </Typography>
                     <Typography color="gray">
-                        Lorem.
+                        Salonlar
                     </Typography>
                     <Typography color="gray">
-                        Lorem.
+                        Bize Ulaşın
+                    </Typography>
+                    <Typography color="gray">
+                        Sıkça Sorulan Sorular
                     </Typography>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={4}>
                     <Typography variant="h6">
-                        Lorem.
+                        Hakkında
                     </Typography>
                     <Typography color="gray">
-                        Lorem.
-                    </Typography>
-                    <Typography color="gray">
-                        Lorem.
-                    </Typography>
-                    <Typography color="gray">
-                        Lorem.
-                    </Typography>
-                    <Typography color="gray">
-                        Lorem.
+                        Kurumsal
                     </Typography>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={4}>
                     <Typography variant="h6">
-                        Lorem.
+                        Bizi Takip Et
                     </Typography>
-                    <Typography color="gray">
-                        Lorem.
-                    </Typography>
-                    <Typography color="gray">
-                        Lorem.
-                    </Typography>
-                    <Typography color="gray">
-                        Lorem.
-                    </Typography>
-                </Grid>
-                <Grid item xs={3}>
-                    <Typography variant="h6">
-                        Lorem.
-                    </Typography>
-                    <Typography color="gray">
-                        Lorem.
-                    </Typography>
-                    <Typography color="gray">
-                        Lorem.
-                    </Typography>
+                    <IconButton><InstagramIcon fontSize="large" /></IconButton>
+                    <IconButton><YouTubeIcon fontSize="large" /></IconButton>
                 </Grid>
             </Grid>
         </Grid>

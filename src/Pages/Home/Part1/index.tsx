@@ -1,5 +1,6 @@
 import { FC } from "react";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Part1: FC = (): JSX.Element => {
     return (
@@ -12,8 +13,10 @@ const Part1: FC = (): JSX.Element => {
                 <Typography variant="h2" color="#fff">
                     Lorem ipsum dolor sit.
                 </Typography>
-                <Typography variant="h6" color="#fff">
-                    Lorem ipsum dolor sit amet.
+                <Typography variant="h6" color="#fff" mt={5}>
+                    <Button variant="outlined" size="large" color="inherit">
+                        <Link className="returnCommunication" to='/communication'>BİZE KATIL</Link>
+                    </Button>
                 </Typography>
             </Box>
         </Grid>

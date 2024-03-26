@@ -1,28 +1,27 @@
 import { FC } from "react";
-import { AppBar, Box, Button, Container, Grid, Toolbar, Typography } from "@mui/material";
+import { Box, Grid, Toolbar, Typography } from "@mui/material";
+import AppBar from '@mui/material/AppBar';
 import AdbIcon from '@mui/icons-material/Adb';
+import { Link } from "react-router-dom";
 
 const Header: FC = (): JSX.Element => {
 
     return (
         <Grid item xs={12}>
-            <AppBar position="static" sx={{backgroundColor: "#fff"}}>
-                <Container maxWidth="xl">
-                    <Toolbar disableGutters>
-                        <AdbIcon sx={{ mr: 1 }} color="primary" />
-                        <Typography variant="h6" color="#000">
-                            LOGO
-                        </Typography>
-                        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: "center" }}>
-                            <Button sx={{ my: 2, color: '#000', display: 'block' }}>
-                                page1
-                            </Button>
-                            <Button sx={{ my: 2, color: '#000', display: 'block' }}>
-                                page2
-                            </Button>
-                        </Box>
-                    </Toolbar>
-                </Container>
+            <AppBar className="sticky-bar">
+                <Toolbar>
+                    <AdbIcon sx={{ mr: 1 }} color="primary" />
+                    <Typography variant="h6" color="#000">
+                        LOGO
+                    </Typography>
+                    <Box className="box">
+                        <Link className="headerLink" to='/'>ANASAYFA</Link>
+                        <Link className="headerLink" to='/privateLesson'>ÖZEL DERSLER</Link>
+                        <Link className="headerLink" to='/salon'>SALONLAR</Link>
+                        <Link className="headerLink" to='/communication'>İLETİŞİM</Link>
+                        <Link className="headerLink" to='/communication'>BLOG</Link>
+                    </Box>
+                </Toolbar>
             </AppBar>
         </Grid>
     )

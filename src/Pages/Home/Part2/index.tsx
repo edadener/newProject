@@ -6,19 +6,14 @@ const Part2: FC = (): JSX.Element => {
         <Grid item xs={12} p={2}>
             <Box textAlign="center">
                 <Typography variant="h2" fontWeight="bold">
-                    Lorem ipsum dolor sit amet.
-                </Typography>
-                <Typography variant="h2" fontWeight="bold">
-                    Lorem ipsum dolor sit.
+                    Neden Pandans Akademi?
                 </Typography>
                 <Typography fontWeight="bold">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, saepe!
                 </Typography>
                 <Typography fontWeight="bold">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia!
-                </Typography>
-                <Typography fontWeight="bold">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    <a href="#" style={{ color: "#000" }}> devamı...</a>
                 </Typography>
             </Box>
         </Grid>
