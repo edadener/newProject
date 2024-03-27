@@ -1,24 +1,24 @@
 .box {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .headerLink {
-    margin: 8px;
-    color: #000 !important;
-    display: block;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
+  margin: 8px;
+  color: #000 !important;
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .headerLink:hover {
-    color: red !important;
+  color: red !important;
 }
 
 .sticky-bar {
-    background-color: #fff !important;
-    position: sticky;
-    top: 0;
+  background-color: #fff !important;
+  position: sticky;
+  top: 0;
 }

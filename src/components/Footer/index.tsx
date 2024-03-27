@@ -1,46 +1,38 @@
 import { FC } from "react";
-import { Grid, IconButton, Typography } from "@mui/material";
-import InstagramIcon from '@mui/icons-material/Instagram';
-import YouTubeIcon from '@mui/icons-material/YouTube';
+import { Grid } from "@mui/material";
+import { Link } from "react-router-dom";
+import FollowUs from "../FollowUs";
 
 const Footer: FC = (): JSX.Element => {
-    return (
-        <Grid item xs={12} p={5} bgcolor="#f5f7f9">
-            <Grid container>
-                <Grid item xs={4}>
-                    <Typography variant="h6">
-                        Keşfet
-                    </Typography>
-                    <Typography color="gray">
-                        Özel Dersler
-                    </Typography>
-                    <Typography color="gray">
-                        Salonlar
-                    </Typography>
-                    <Typography color="gray">
-                        Bize Ulaşın
-                    </Typography>
-                    <Typography color="gray">
-                        Sıkça Sorulan Sorular
-                    </Typography>
-                </Grid>
-                <Grid item xs={4}>
-                    <Typography variant="h6">
-                        Hakkında
-                    </Typography>
-                    <Typography color="gray">
-                        Kurumsal
-                    </Typography>
-                </Grid>
-                <Grid item xs={4}>
-                    <Typography variant="h6">
-                        Bizi Takip Et
-                    </Typography>
-                    <IconButton><InstagramIcon fontSize="large" /></IconButton>
-                    <IconButton><YouTubeIcon fontSize="large" /></IconButton>
-                </Grid>
-            </Grid>
+  return (
+    <Grid item xs={12} p={3} bgcolor="#f5f7f9">
+      <Grid container>
+        <Grid item xs={4}>
+          <h4 className="footerHeader">KEŞFET</h4>
+          <Link className="footerLink" to="/privateLesson">
+            Özel Dersler
+          </Link>
+          <Link className="footerLink" to="/salon">
+            Salonlar
+          </Link>
+          <Link className="footerLink" to="/communication">
+            Bize Ulaşın
+          </Link>
+          <Link className="footerLink" to="/questions">
+            Sıkça Sorulan Sorular
+          </Link>
         </Grid>
-    )
-}
+        <Grid item xs={4}>
+          <h4 className="footerHeader">HAKKINDA</h4>
+          <Link className="footerLink" to="/">
+            Kurumsal
+          </Link>
+        </Grid>
+        <Grid item xs={4}>
+          <FollowUs />
+        </Grid>
+      </Grid>
+    </Grid>
+  );
+};
 export default Footer;

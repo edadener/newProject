@@ -5,6 +5,7 @@ import Footer from "../../components/Footer";
 import Part1 from "./Part1";
 import Part2 from "./Part2";
 import Part3 from "./Part3";
+import Part4 from "./Part4";
 
 const Home: FC = (): JSX.Element => {
 
@@ -14,6 +15,7 @@ const Home: FC = (): JSX.Element => {
       <Part1 />
       <Part2 />
       <Part3 />
+      <Part4 />
       <Footer />
     </Grid>
   )
