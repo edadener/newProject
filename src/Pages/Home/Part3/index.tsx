@@ -10,7 +10,7 @@ const Part3: FC = (): JSX.Element => {
           <Box>
             <img src="/image/one.jpg" alt="#" />
             <Typography variant="h6" fontWeight="bold">
-              <Link className="homeLink" to="/about">
+              <Link className="homeLink" to="/privateLesson">
                 Özel Dersler
               </Link>
             </Typography>

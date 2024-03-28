@@ -6,24 +6,22 @@ import PhoneIcon from "@mui/icons-material/Phone";
 
 const Communication: FC = (): JSX.Element => {
   return (
-    <Grid container>
+    <Grid
+      container
+      justifyContent="center"
+      alignItems="center"
+      textAlign="center"
+    >
       <Header />
       <Grid item xs={12}>
         <Box component="main" sx={{ p: 3 }}>
           <Toolbar />
         </Box>
       </Grid>
-      <Grid item xs={12}>
-        <Box
-          height="50%"
-          width="50%"
-          textAlign="center"
-          my={4}
-          p={2}
-          sx={{ border: "1px solid #cbccd0", borderRadius: 3 }}
-        >
+      <Grid item xs={8} mb={5}>
+        <Box className="boxFrame">
           <h4 className="footerHeader">BİZE ULAŞIN</h4>
-          <Typography fontSize={20}>
+          <Typography className="contactUs" mb={3}>
             <PhoneIcon fontSize="medium" />
             <a href="tel:08505327000" className="homeLink">
               0850 532 70 00
@@ -31,15 +29,8 @@ const Communication: FC = (): JSX.Element => {
           </Typography>
         </Box>
       </Grid>
-      <Grid item xs={12}>
-        <Box
-          height="50%"
-          width="50%"
-          textAlign="center"
-          my={4}
-          p={2}
-          sx={{ border: "1px solid #cbccd0", borderRadius: 3 }}
-        >
+      <Grid item xs={8}>
+        <Box className="boxFrame">
           <FollowUs />
         </Box>
       </Grid>

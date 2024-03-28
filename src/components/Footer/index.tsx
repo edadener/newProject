@@ -12,6 +12,9 @@ const Footer: FC = (): JSX.Element => {
           <Link className="footerLink" to="/privateLesson">
             Özel Dersler
           </Link>
+          <Link className="footerLink" to="/danceOrganization">
+            Dans Organizasyonları
+          </Link>
           <Link className="footerLink" to="/salon">
             Salonlar
           </Link>
